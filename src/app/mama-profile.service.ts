@@ -18,6 +18,10 @@ export class MamaProfileService {
     this.profiles.push(newMamaProfile);
   }
 
+  getMamaProfileById(mamaprofileId: number){
+    return this.database.object('profiles/' + mamaprofileId);
+  }
+
   // getMamaProfileById(mamaProfileId: number){
   //   for (var i = 0; i <= MAMAPROFILES.length - 1; i++) {
   //     if (MAMAPROFILES[i].id === mamaProfileId) {

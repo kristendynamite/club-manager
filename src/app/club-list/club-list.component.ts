@@ -21,10 +21,8 @@ export class ClubListComponent implements OnInit {
     this.mamaprofiles = this.mamaProfileService.getMamaProfiles();
   }
 
- // goToDetailPage(clickedMamaProfile: MamaProfile) {
- //     this.router.navigate(['mamaprofile', clickedMamaProfile.id]);
- //   };
-
-
+  goToDetailPage(clickedMamaProfile) {
+  this.router.navigate(['mamaprofiles', clickedMamaProfile.$key]);
+};
 
 }

@@ -3,5 +3,6 @@
 <div *ngFor="let mamaprofile of mamaprofiles | async" (click)="goToDetailPage(mamaprofile)" class="panel panel-default">
   <div class="panel-body">
     <h3>{{mamaprofile.name}}  <em>{{mamaprofile.title}}</em></h3>
+    <h1>{{mamaprofile.$key}}</h1>
   </div>
 </div>

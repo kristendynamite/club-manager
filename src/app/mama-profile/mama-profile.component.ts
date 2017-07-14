@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { MamaProfile } from '../mama-profile.model';
 import { MamaProfileService } from '../mama-profile.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -13,12 +14,19 @@ import { MamaProfileService } from '../mama-profile.service';
 })
 
 export class MamaProfileComponent implements OnInit {
-    mamaProfileId: number;
-    mamaProfileToDisplay: MamaProfile;
+    mamaprofileId: string;
+    mamaProfileToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private MamaProfileService: MamaProfileService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+
+    this.route.params.forEach((urlParameters) => {
+    this.mamaProfileId = urlParameters['id'];
+  });
+  this.mamaProfileToDisplay = this.MamaProfileService.getMamaProfileById(this.mamaProfileId);
+ }
+  }
     // this.route.params.forEach((urlParameters) => {
     //   this.mamaProfileId = parseInt(urlParameters['id']);
     // });
