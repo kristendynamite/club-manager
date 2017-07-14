@@ -18,12 +18,12 @@ export class MamaProfileComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private location: Location, private MamaProfileService: MamaProfileService) {}
 
-  ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.mamaProfileId = parseInt(urlParameters['id']);
-    });
-    this.mamaProfileToDisplay = this.MamaProfileService.getMamaProfileById(this.mamaProfileId);
-    }
+  ngOnInit() {}
+    // this.route.params.forEach((urlParameters) => {
+    //   this.mamaProfileId = parseInt(urlParameters['id']);
+    // });
+    // this.mamaProfileToDisplay = this.MamaProfileService.getMamaProfileById(this.mamaProfileId);
+    // }
 
 
 }

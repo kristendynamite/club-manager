@@ -1,3 +1,33 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a New Mama to the club!</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Mama's Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Mama's Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Mama's Location:</label>
+        <br>
+        <input #newLocation>
+      </div>
+
+      <div>
+        <label>Short Bio:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newTitle.value, newLocation.value, newDescription.value); newName.value=''; newTitle.value=''; newLocation.value=''; newDescription.value=''">Add</button>
+    </div>
+  </div>
+</div>
