@@ -1,3 +1,7 @@
-<p>
-  club-list works!
-</p>
+<h2>Mama Profiles</h2>
+
+<div *ngFor="let mamaprofile of mamaprofiles" (click)="goToDetailPage(mamaprofile)" class="panel panel-default">
+  <div class="panel-body">
+    <h3>{{mamaprofile.name}} / <em>{{mamaprofile.title}}</em></h3>
+  </div>
+</div>
