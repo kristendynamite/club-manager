@@ -1,29 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { MamaProfile } from '../mama-profile.model';
 import { Router } from '@angular/router';
+import { MamaProfileService } from '../mama-profile.service'
 
 @Component({
   selector: 'app-club-list',
   templateUrl: './club-list.component.html',
-  styleUrls: ['./club-list.component.css']
+  styleUrls: ['./club-list.component.css'],
+  providers: [MamaProfileService]
 })
+
 export class ClubListComponent implements OnInit {
+  mamaprofiles: MamaProfile[];
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private mamaProfileService: MamaProfileService){}
 
-  mamaprofiles: MamaProfile[] = [
-   new MamaProfile("Xena", "Aerial Silks Dancer", "SE",
-       "Always down to grab a yoga class and kombucha.", 1),
-   new MamaProfile("Amy", "Stay-at-home mama of two", "NE / Kenton",
-       "Love meeting up with other mamas at the library, park, and activity center.", 2),
- ];
-
+  ngOnInit() {
+    this.mamaprofiles = this.mamaProfileService.getMamaProfiles();
+  }
+  
  goToDetailPage(clickedMamaProfile: MamaProfile) {
      this.router.navigate(['mamaprofile', clickedMamaProfile.id]);
    };
 
 
-  ngOnInit() {
-  }
 
 }

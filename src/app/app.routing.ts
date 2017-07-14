@@ -12,7 +12,7 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'mama-profile/:id',
+    path: 'club-list/:id',
     component: MamaProfileComponent
   },
   {
