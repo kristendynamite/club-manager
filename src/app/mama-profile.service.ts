@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { MamaProfile } from './mama-profile.model';
 import { MAMAPROFILES } from './mock-profiles';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
 export class MamaProfileService {
+  profiles: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private database: AngularFireDatabase) {
+    this.profiles = database.list('profiles');
+  }
 
   getMamaProfiles() {
-    return MAMAPROFILES;
+    return this.profiles;
   }
 
   getMamaProfileById(mamaProfileId: number){

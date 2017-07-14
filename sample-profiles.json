@@ -1,0 +1,20 @@
+{ "profiles": [{
+    "name": "Xena",
+    "title": "Mama Warrior / Aerial Silks Performer",
+    "location": "SE near New Seasons",
+    "description": "Always up for a hot yoga class and green juice date.",
+    "id": "1"
+    }, {
+    "name": "Delilah",
+    "title": "Proud stay-at-home mama of two amazing kiddos",
+    "location": "NE near the lumberjack statue",
+    "description": "Love meeting up with other mamas at the local park, coffee shop, and rec center",
+    "id": "2"
+      }, {
+    "name": "Karen",
+    "title": "Diamond seller of doTerra with a heart of gold",
+    "location": "The Pearl",
+    "description": "Making six digits selling doTerra, waist trainers, and green smoothies from home and you can, too!",
+    "id": "3"
+  }]
+}

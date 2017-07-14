@@ -6,22 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Don't forget that anyone should be able to clone down and demo any of your projects in your GitHub portfolio. And, by ignoring your credentials you're ensuring they won't be present in your GitHub repo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+So, if a potential employer clones your project it won't run as-is! So, always include instructions for users to acquire their own Firebase credentials and place them in the appropriate file, in the appropriate place, with the appropriate variable names. Your project READMEs should always setup instructions detailing all necessary steps to get a project up and running. Including adding Firebase credentials.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
 
