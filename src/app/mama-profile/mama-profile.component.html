@@ -1,6 +1,6 @@
 <div>
-  <h3>{{mamaProfileToDisplay.name}}</h3>
-  <h4>{{mamaProfileDisplay.title}}</h4>
-  <h4>{{mamaProfileDisplay.location}}</h4>
-  <p>{{mamaProfileDisplay.description}}</p>
+  <h3>{{(mamaProfileToDisplay | async)?.name}}</h3>
+  <h4>{{(mamaProfileToDisplay | async)?.title}}</h4>
+  <h4>Resides in {{(mamaProfileToDisplay | async)?.location}}</h4>
+  <p>{{(mamaProfileToDisplay | async)?.description}}</p>
 </div>

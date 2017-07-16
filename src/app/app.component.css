@@ -1,1 +1,43 @@
+.navbar-brand {
+  color: darkgreen;
+  font-family: 'Lemonada', cursive;
+  font-size: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s all ease-in-out;
+}
 
+.navbar-brand:visited {
+  color: darkgreen;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-brand:hover {
+  color: peachpuff;
+  background: rgba(70, 200, 200, 0.5);
+
+}
+
+li > a {
+  color: darkgreen;
+  background: rgba(255, 255, 255, 0.4);
+  margin-left: 10px;
+  transition: 0.5s all ease-in-out;
+  font-size: 15px;
+}
+
+li > a:hover {
+  color: darkgreen;
+  background: rgba(70, 200, 200, 0.5);
+}
+
+li > a:visited {
+  color: peachpuff;
+  background: rgba(70, 200, 200, 0.5);
+}
+.container {
+   font-family: 'Montserrat', sans-serif;
+ }

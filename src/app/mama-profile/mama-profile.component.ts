@@ -14,24 +14,17 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 
 export class MamaProfileComponent implements OnInit {
-    mamaprofileId: string;
+    profileId: string;
     mamaProfileToDisplay;
 
-  constructor(private route: ActivatedRoute, private location: Location, private MamaProfileService: MamaProfileService) {}
+  constructor(private route: ActivatedRoute, private location: Location, private mamaProfileService: MamaProfileService) {}
 
   ngOnInit() {
 
     this.route.params.forEach((urlParameters) => {
-    this.mamaProfileId = urlParameters['id'];
+    this.profileId = urlParameters['id'];
   });
-  this.mamaProfileToDisplay = this.MamaProfileService.getMamaProfileById(this.mamaProfileId);
+  this.mamaProfileToDisplay = this.mamaProfileService.getMamaProfileById(this.profileId);
  }
-  }
-    // this.route.params.forEach((urlParameters) => {
-    //   this.mamaProfileId = parseInt(urlParameters['id']);
-    // });
-    // this.mamaProfileToDisplay = this.MamaProfileService.getMamaProfileById(this.mamaProfileId);
-    // }
-
 
 }

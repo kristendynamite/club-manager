@@ -1,17 +1,16 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Mamas of Portland</a>
+      <a class="navbar-brand" routerLink="">All the Portland Mamas</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="club-list">Meet the Mamas</a></li>
-      <li><a routerLink="about">About</a></li>
+      <li><a class="nav-li" routerLink="club-list">Meet the Mamas</a></li>
+      <li><a class="nav-li" routerLink="about">About</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="container">
-  <h1>{{title}}</h1>
   <router-outlet></router-outlet>
 </div>
 

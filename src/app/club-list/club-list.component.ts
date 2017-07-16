@@ -12,8 +12,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 
 export class ClubListComponent implements OnInit {
-  // mamaprofiles: MamaProfile[];
   mamaprofiles: FirebaseListObservable<any[]>;
+
 
   constructor(private router: Router, private mamaProfileService: MamaProfileService){}
 
@@ -22,7 +22,7 @@ export class ClubListComponent implements OnInit {
   }
 
   goToDetailPage(clickedMamaProfile) {
-  this.router.navigate(['mamaprofiles', clickedMamaProfile.$key]);
+  this.router.navigate(['club-list', clickedMamaProfile.$key]);
 };
 
 }
