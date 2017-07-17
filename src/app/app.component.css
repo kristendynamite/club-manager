@@ -1,42 +1,44 @@
 .navbar-brand {
-  color: darkgreen;
+  color: #488460;
   font-family: 'Lemonada', cursive;
   font-size: 40px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.7);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s all ease-in-out;
+  border-radius: 5px;
 }
 
 .navbar-brand:visited {
-  color: darkgreen;
-  background: rgba(255, 255, 255, 0.4);
+  color: #488460;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .navbar-brand:hover {
-  color: peachpuff;
+  color: #e29953;
   background: rgba(70, 200, 200, 0.5);
 
 }
 
 li > a {
-  color: darkgreen;
-  background: rgba(255, 255, 255, 0.4);
+  color: #488460;
+  background: rgba(255, 255, 255, 0.3);
   margin-left: 10px;
   transition: 0.5s all ease-in-out;
   font-size: 15px;
+  border-radius: 5px;
+  margin: 5px;
 }
 
 li > a:hover {
-  color: darkgreen;
+  color: #488460;
   background: rgba(70, 200, 200, 0.5);
 }
 
 li > a:visited {
-  color: peachpuff;
-  background: rgba(70, 200, 200, 0.5);
+  color: white;
 }
 .container {
    font-family: 'Montserrat', sans-serif;

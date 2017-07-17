@@ -1,7 +1,17 @@
-<h2>Mama Profiles</h2>
+<h2>Meet the Mamas</h2>
+<h5>We are an inclusive group of mamas living in Portland. Consider us your guides to mommyhood, your new friends, your people. It can be so isolating raising babies, that's why we would love to set up a playdate or simply a mom date with you! We aren't here to judge. This is a safe space, a place where we can all feel free to just be the moms we want to be. See our calendar of events for upcoming All the Portland Mamas meetups!
 
 <div *ngFor="let mamaprofile of mamaprofiles | async" (click)="goToDetailPage(mamaprofile)" class="panel panel-default">
   <div class="panel-body">
-    <h3>{{mamaprofile.name}}  <em>{{mamaprofile.title}}</em></h3>
+    <h3>{{mamaprofile.name}}</h3>
+    <p><em>{{mamaprofile.title}}</em></p>
+    <div class="mama-photo"><img src={{mamaprofile.photo}}></div>
+    <div *ngIf="currentRoute === '/admin'">
+      <em>Lives in {{mamaprofile.location}}</em>
+      <br>
+      <hr>
+      {{mamaprofile.description}}
+      <app-edit-profile></app-edit-profile>
+    </div>
   </div>
 </div>
