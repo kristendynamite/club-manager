@@ -1,0 +1,10 @@
+input, textarea {
+  border: 1px solid #e29953;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button {
+  border: 1px solid #488460;
+  border-radius: 5px;
+}

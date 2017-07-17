@@ -22,4 +22,12 @@ export class MamaProfileService {
     return this.database.object('profiles/' + mamaprofileId);
   }
 
+  updateMamaProfile(localUpdatedMamaProfile){
+    var profileEntryInFirebase = this.getMamaProfileById(localUpdatedMamaProfile.$key);
+    profileEntryInFirebase.update({name: localUpdatedMamaProfile.name,
+                                title: localUpdatedMamaProfile.title,
+                                location: localUpdatedMamaProfile.location,
+                                description: localUpdatedMamaProfile.description});
+  }
+
 }

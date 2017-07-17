@@ -1,1 +1,17 @@
+<h4>Update Mama Profile!:</h4>
 
+<label>New Mama Name:</label>
+<input [(ngModel)]="selectedMamaProfile.name">
+<br>
+
+<label>New Mama Title:</label>
+<input [(ngModel)]="selectedMamaProfile.title">
+<br>
+
+<label>New Mama Locations:</label>
+<input [(ngModel)]="selectedMamaProfile.location">
+
+<label>New Mama Description:</label>
+<input [(ngModel)]="selectedMamaProfile.description">
+
+<button (click)="beginUpdatingMamaProfile(selectedMamaProfile)">Update</button>
