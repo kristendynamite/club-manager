@@ -30,4 +30,9 @@ export class MamaProfileService {
                                 description: localUpdatedMamaProfile.description});
   }
 
+  deleteMamaProfile(localMamaProfileToDelete){
+    var profileEntryInFirebase = this.getMamaProfileById(localMamaProfileToDelete.$key);
+    profileEntryInFirebase.remove();
+  }
+
 }

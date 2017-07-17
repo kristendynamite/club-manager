@@ -43,3 +43,7 @@ li > a:visited {
 .container {
    font-family: 'Montserrat', sans-serif;
  }
+
+ footer {
+   text-align: center;
+ }

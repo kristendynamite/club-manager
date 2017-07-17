@@ -19,4 +19,10 @@ export class EditProfileComponent implements OnInit {
     this.mamaProfileService.updateMamaProfile(mamaProfileToUpdate);
   }
 
+  beginDeletingMamaProfile(mamaProfileToDelete){
+   if(confirm("Are you sure you want to delete this item from the inventory?")){
+     this.mamaProfileService.deleteMamaProfile(mamaProfileToDelete);
+   }
+ }
+
 }
