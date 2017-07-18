@@ -6,7 +6,7 @@
 
 This app is designed to help connect mothers living in Portland. Admin are able to edit or delete member profiles, or add new members.
 
-<img src="https://raw.githubusercontent.com/kristendynamite/club-manager/master/screenshot.png">
+<img src="https://raw.githubusercontent.com/kristendynamite/club-manager/master/src/screenshot.png">
 
 ### Specs
 * Users can visit a page to see a list of mama profiles.
@@ -68,11 +68,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-Don't forget that anyone should be able to clone down and demo any of your projects in your GitHub portfolio. And, by ignoring your credentials you're ensuring they won't be present in your GitHub repo.
-
-So, if a potential employer clones your project it won't run as-is! So, always include instructions for users to acquire their own Firebase credentials and place them in the appropriate file, in the appropriate place, with the appropriate variable names. Your project READMEs should always setup instructions detailing all necessary steps to get a project up and running. Including adding Firebase credentials.
-
 
 ## Further help
 
